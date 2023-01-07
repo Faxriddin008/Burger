@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 .container{
     max-width: 1110px;
@@ -22,8 +24,10 @@
 }
 
 /* header boshlanishi */
-
 .header{
+    background: var(--MainFootBlackBg);
+}
+.header__content{
     background: url(./img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,13 +61,15 @@
     color: var(--TitleGreen);
     font-weight: 300;
     font-size: 20px;
-    padding: 37px 18px;
+    margin-top: 15px;
+    padding: 22px 15px;
     transition: 0.5s;
     display: inline-block;
 }
 .menu__link:hover{
     background: var(--Bg75);
     color: var(--White);
+    border-radius: 10px;
 }
 .busket{
     color: var(--TitleGreen);
@@ -98,11 +104,18 @@
 }
 .header__price{
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 300;
     padding: 30px 90px;
     background: var(--Bg75);
     color: var(--White);
+    border-radius: 10px;
     width: max-content;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.header__price:hover{
+    background: var(--White);
+    color: var(--LogoInnerColor);
 }
 .header__content{
     flex-grow: 1;
@@ -261,6 +274,7 @@
     background: var(--White);
     font-size: 36px;
     font-weight: 700;
+    background: var(--MainFootBlackBg);
 }
 
 /* main tugashi */
@@ -291,6 +305,10 @@
     color: var(--TextColor);
     font-size: 16px;
     text-decoration: none;
+    transition: 0.4s;
+}
+.footer__menu_links:hover{
+    color: var(--LogoBorderColor);
 }
 .footer__nav{
     display: flex;
@@ -303,6 +321,8 @@
     font-weight: 700;
     color: var(--TitleGreen);
     text-decoration: none;
+    font-family: sans-serif;
+    
 }
 .footer{
     background: var(--MainFootBlackBg);
